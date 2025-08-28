@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Somerset Digital Solutions — Digital Skills. Simple Solutions.</title>
+  <meta name="description" content="Somerset Digital Solutions provides community-focused digital skills training and ICT support services in Somerset East. Courses include computer basics, CV writing, Microsoft Office, online safety, and more." />
+  <style>
+    :root{
+      --bg:#0b1220;          /* deep navy */
+      --card:#111a2e;        /* card background */
+      --text:#eaf0ff;        /* light text */
+      --muted:#b9c4e3;       /* muted text */
+      --accent:#3dd9a3;      /* green accent */
+      --accent-2:#59a6ff;    /* blue accent */
+      --ring: rgba(61,217,163,.35);
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text); background: radial-gradient(1200px 600px at 80% -10%, rgba(89,166,255,.18), transparent),
+                         radial-gradient(900px 500px at -10% 0%, rgba(61,217,163,.12), transparent),
+                         var(--bg);
+      line-height:1.6;
+    }
+    a{color:var(--accent)}
+    .container{max-width:1100px; margin:0 auto; padding:24px}
+
+    /* Header */
+    header{position:sticky; top:0; backdrop-filter: blur(8px); background:rgba(11,18,32,.65); border-bottom:1px solid rgba(255,255,255,.06); z-index:20}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
+    .brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--text)}
+    .brand img{height:42px; width:42px; border-radius:10px; object-fit:cover; box-shadow: var(--shadow)}
+    .brand .name{font-weight:700; letter-spacing:.2px}
+    nav a{color:var(--muted); text-decoration:none; margin-left:16px; font-weight:600}
+    nav a:hover{color:var(--text)}
+
+    /* Hero */
+    .hero{padding:56px 0 32px}
+    .hero-inner{display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center}
+    .badge{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px solid rgba(255,255,255,.12); border-radius:999px; font-size:12px; color:var(--muted)}
+    h1{font-size:clamp(28px, 4vw, 40px); line-height:1.15; margin:14px 0 10px}
+    .tag{font-size:18px; color:var(--muted); margin:0 0 16px}
+    .cta{display:flex; gap:12px; flex-wrap:wrap}
+    .btn{appearance:none; border:0; background:var(--accent); color:#062616; padding:12px 16px; border-radius:12px; font-weight:700; cursor:pointer; box-shadow:0 6px 16px var(--ring)}
+    .btn:hover{transform:translateY(-1px)}
+    .btn.alt{background:transparent; color:var(--text); border:1px solid rgba(255,255,255,.18)}
+    .hero-card{background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); border-radius:var(--radius); padding:16px; box-shadow: var(--shadow)}
+    .hero-list{margin:0; padding-left:18px}
+
+    /* Sections */
+    section{padding:40px 0}
+    h2{font-size:clamp(22px,3.2vw,30px); margin:0 0 14px}
+    .grid{display:grid; grid-template-columns: repeat(3, 1fr); gap:16px}
+    .card{background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:var(--radius); padding:18px; box-shadow: var(--shadow)}
+    .card h3{margin:0 0 8px}
+    .dim{color:var(--muted); font-size:14px}
+
+    /* Pricing strip */
+    .strip{display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; margin-top:14px}
+    .pill{background:rgba(61,217,163,.15); border:1px solid rgba(61,217,163,.35); border-radius:12px; padding:10px 12px; font-weight:700}
+
+    /* Contact */
+    .contact{display:grid; grid-template-columns:1.2fr .8fr; gap:18px}
+    .contact .card ul{margin:0; padding-left:18px}
+    form{display:grid; gap:10px}
+    input, textarea{background:#0e1730; color:var(--text); border:1px solid rgba(255,255,255,.12); border-radius:10px; padding:10px}
+    textarea{min-height:110px}
+
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.08); color:var(--muted); padding:20px 0 50px}
+
+    /* Responsive */
+    @media (max-width: 920px){
+      .hero-inner, .contact{grid-template-columns:1fr}
+    }
+    @media (max-width: 720px){
+      .grid{grid-template-columns:1fr}
+      nav{display:none}
+      .strip{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main" style="position:absolute;left:-9999px;top:-9999px">Skip to content</a>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#" aria-label="Somerset Digital Solutions home">
+        <!-- Replace src with your logo filename, e.g. 'logo.png' -->
+        <img src="logo.jpeg" alt="Somerset Digital Solutions logo" />
+        <span class="name">Somerset Digital Solutions</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="badge">Youth-led • Somerset East • Community-focused</span>
+          <h1>Digital Skills. Simple Solutions.</h1>
+          <p class="tag">Affordable digital training & on-call ICT support for schools, small businesses, NGOs and job seekers in Somerset East.</p>
+          <div class="cta">
+            <a class="btn" href="https://wa.me/27673897734" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">Chat on WhatsApp</a>
+            <a class="btn alt" href="#courses">View Courses</a>
+            <a class="btn alt" href="#contact">Get a Quote</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Highlights">
+          <h3 style="margin:4px 0 8px">What we do</h3>
+          <ul class="hero-list">
+            <li>Digital skills training with certificates</li>
+            <li>Computer & printer troubleshooting</li>
+            <li>Wi‑Fi & network setup</li>
+            <li>Website design & Google Business Profiles</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>ICT Support Services</h2>
+        <p class="dim">Flexible once-off callouts or affordable monthly retainers for local businesses, schools and NGOs.</p>
+        <div class="grid" role="list">
+          <article class="card" role="listitem">
+            <h3>On‑Call Tech Support</h3>
+            <p>Computer diagnostics, software setup, virus removal, backups and performance tuning.</p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>Networks & Wi‑Fi</h3>
+            <p>Router installation, coverage optimisation and basic cyber‑safety guidance.</p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>Web Presence</h3>
+            <p>Starter websites, Google Business Profiles and social media setup to help customers find you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses">
+      <div class="container">
+        <h2>Digital Skills Training</h2>
+        <p class="dim">Short, practical courses with community-friendly pricing. Certificates of completion provided.</p>
+
+        <div class="grid" role="list">
+          <article class="card" role="listitem">
+            <h3>Basic Computer Skills</h3>
+            <p>Windows basics, email & internet, and file management.</p>
+            <div class="strip">
+              <div class="pill">2 weeks</div>
+              <div class="pill">R450–R600</div>
+              <div class="pill">Beginner</div>
+              <div class="pill">Certificate</div>
+            </div>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>CV Writing & Job Applications</h3>
+            <p>Professional CVs, cover letters, email etiquette and online applications.</p>
+            <div class="strip">
+              <div class="pill">1 week</div>
+              <div class="pill">R300–R450</div>
+              <div class="pill">All levels</div>
+              <div class="pill">Certificate</div>
+            </div>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Microsoft Office Essentials</h3>
+            <p>Word for documents, Excel for budgets & tables, PowerPoint for presentations, Outlook basics.</p>
+            <div class="strip">
+              <div class="pill">4 weeks</div>
+              <div class="pill">R1,200–R1,500</div>
+              <div class="pill">Beginner–Intermediate</div>
+              <div class="pill">Certificate</div>
+            </div>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Digital Literacy & Online Safety</h3>
+            <p>Protect your accounts, spot scams & use social media responsibly.</p>
+            <div class="strip">
+              <div class="pill">1 week</div>
+              <div class="pill">R300–R500</div>
+              <div class="pill">All ages</div>
+              <div class="pill">Certificate</div>
+            </div>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Google & Online Tools</h3>
+            <p>Gmail, Drive, Docs & Sheets, plus Google Business Profiles for SMMEs.</p>
+            <div class="strip">
+              <div class="pill">2 weeks</div>
+              <div class="pill">R400–R600</div>
+              <div class="pill">Beginner–Intermediate</div>
+              <div class="pill">Certificate</div>
+            </div>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Extras</h3>
+            <p>Typing skills, Social media basics, Canva for posters & CVs, Online learning skills.</p>
+            <div class="strip">
+              <div class="pill">1–2 weeks</div>
+              <div class="pill">From R250</div>
+              <div class="pill">Practical</div>
+              <div class="pill">Certificate</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact">
+        <div class="card">
+          <h2>Contact Us</h2>
+          <ul>
+            <li><strong>Owner:</strong> Thandolwethu</li>
+            <li><strong>Phone/WhatsApp:</strong> <a href="tel:+27673897734">067 389 7734</a></li>
+            <li><strong>Email:</strong> <a href="mailto:thandolwethu.rafa2@gmail.com">thandolwethu.rafa2@gmail.com</a></li>
+            <li><strong>Address:</strong> <a href="https://www.google.com/maps?q=99%20Nono%20Street%2C%20New%20Brighton%2C%20Somerset%20East%2C%205850" target="_blank" rel="noopener">99 Nono Street, New Brighton, Somerset East, 5850</a></li>
+          </ul>
+          <div class="cta" style="margin-top:8px">
+            <a class="btn" href="mailto:thandolwethu.rafa2@gmail.com?subject=Course%20enquiry">Email us</a>
+            <a class="btn alt" href="https://wa.me/27673897734" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Quick Message</h2>
+          <!-- This form is front-end only. Connect it to a backend or a service like Formspree when you're ready. -->
+          <form onsubmit="event.preventDefault(); alert('Thank you! We\'ll get back to you shortly.'); this.reset();">
+            <input aria-label="Full name" name="name" placeholder="Your name" required />
+            <input aria-label="Email" type="email" name="email" placeholder="Your email" required />
+            <textarea aria-label="Message" name="message" placeholder="How can we help?" required></textarea>
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap">
+        <strong>Somerset Digital Solutions</strong>
+        <span class="dim">• Digital Skills & ICT Support in Somerset East</span>
+      </div>
+      <div class="dim" style="margin-top:8px">© <span id="year"></span> Somerset Digital Solutions. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
